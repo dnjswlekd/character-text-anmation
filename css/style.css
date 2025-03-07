@@ -46,3 +46,76 @@ body {
 .character .img img {
   width: 100%;
 }
+
+.con01 {
+  height: 80vh;
+  padding-top: 50px;
+}
+.con01 .text-box {
+  width: 100%;
+  height: 80vh;
+  font-size: 6vw;
+  font-family: "squada One", cursive;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  position: relative;
+}
+.con01 .text-box ul {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.con01 .text-box ul.menu {
+  color: transparent;
+  -webkit-text-stroke: 1px #b1dd40;
+}
+.con01 .text-box ul .color {
+  color: #fff;
+  -webkit-text-stroke: 0px;
+}
+.con01 .text-box .en1 {
+  font-family: "sriracha", cursive;
+  font-style: italic;
+}
+.con01 .text-box .container {
+  height: 80px;
+  outline: 1px transparent;
+  overflow: hidden;
+}
+.con01 .text-box .container .mask .en1 {
+  color: #b1dd40;
+  -webkit-text-stroke: 0px;
+  transform-origin: top left;
+}
+
+.con02 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "squada One", cursive;
+  position: relative;
+}
+.con02 h2 {
+  color: #fff;
+  font-size: 11vw;
+  position: absolute;
+}
+.con02 h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+.con02 h2:nth-child(2) {
+  color: #fff;
+  animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(0 62%, 11% 72%, 21% 67%, 30% 71%, 37% 73%, 44% 67%, 57% 72%, 65% 66%, 73% 73%, 80% 67%, 87% 71%, 100% 63%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 71%, 11% 74%, 20% 69%, 30% 76%, 39% 69%, 49% 75%, 60% 69%, 66% 75%, 73% 76%, 80% 70%, 88% 80%, 99% 78%, 100% 100%, 0% 100%);
+  }
+}
